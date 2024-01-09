@@ -1,0 +1,6 @@
+plot "result.dat" with lines, "" using 0:3 with lines, "" using 0:4 with lines, "" using 0:5 with lines
+
+e = 2.718281828
+f(x) = 0.025*e**-(x**2/2000)  
+plot [-150:150]"histogram_data delx = 2.dat", [-150:150] f(x) 
+plot [-150:150]"histogram_data delx = 1.dat", [-150:150] f(x) 
